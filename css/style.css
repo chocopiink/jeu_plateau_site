@@ -19,6 +19,7 @@ header {
     position: sticky;
     display: flex;
     justify-content: center;
+    z-index: 999; /*Vidéo passe sous le header*/
 }
 
 header img {
@@ -42,6 +43,7 @@ nav ul li a {
     padding: 40;
 }
 
+<<<<<<< Updated upstream
 .container {
     max-width: 1200px;
     margin: 20px auto;
@@ -135,7 +137,90 @@ footer img {
     width: 2.5%;
 }
 
+=======
+
+
+#catchPresentation{
+    font-style: italic;
+}
+
+h1{
+    font-size: 56px;
+    padding: 20px;
+}
+
+p{
+    padding: 20px;
+}
+
+#story{
+    text-align: center, justify;
+    font-size: large;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0px 20px;
+    text-align: center;
+}
+.video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 */
+    margin: 40px 0;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}  
+>>>>>>> Stashed changes
 
 .button{
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #906FC9;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 35px;
 
 }
+
+#armure{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 60px;
+}
+
+#armure p{
+    text-align: justify;
+}
+
+#cartes{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 60px;
+}
+/* Probleme de mise en page
+
+#plateau{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+#plateau img, p{
+    width: 200px;
+}
+
+*/
