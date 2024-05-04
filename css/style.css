@@ -28,6 +28,7 @@ header img {
 }
 
 nav ul {
+    width: 100%;
     list-style-type: none;
     padding: 0;
     gap: 20px;
@@ -43,7 +44,6 @@ nav ul li a {
     padding: 40;
 }
 
-<<<<<<< Updated upstream
 .container {
     max-width: 1200px;
     margin: 20px auto;
@@ -137,7 +137,6 @@ footer img {
     width: 2.5%;
 }
 
-=======
 
 
 #catchPresentation{
@@ -178,7 +177,6 @@ p{
     width: 100%;
     height: 100%;
 }  
->>>>>>> Stashed changes
 
 .button{
     display: inline-block;
@@ -197,7 +195,7 @@ p{
 #armure{
     display: flex;
     justify-content: space-evenly;
-    padding-top: 60px;
+    margin-top: 60px;
 }
 
 #armure p{
@@ -207,20 +205,23 @@ p{
 #cartes{
     display: flex;
     justify-content: space-evenly;
-    padding-top: 60px;
+    margin-top: 60px;
 }
-/* Probleme de mise en page
+
+#cartes p{
+    text-align: justify;
+}
 
 #plateau{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
-
+    position: relative;
+    margin-top: 60px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
-#plateau img, p{
-    width: 200px;
+#plateau img{
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 20px;    
 }
-
-*/
