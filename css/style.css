@@ -119,13 +119,19 @@ p{
 /*MECANIQUES*/
 
 #armure{
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     margin-top: 60px;
+    align-items: center;
 }
 
 #armure p{
     text-align: justify;
+}
+
+#armure img{
+    width: 500px;
 }
 
 #cartes{
@@ -157,7 +163,6 @@ p{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-<<<<<<< Updated upstream
     padding: 20px;    
 }
 
@@ -255,9 +260,7 @@ footer img {
     margin-right: 10px;
     width: 2.5%;
 }
-=======
 
-}
 
 
 
@@ -306,4 +309,3 @@ footer img {
 
 }
 /*------------------------------------------------------*/
->>>>>>> Stashed changes
