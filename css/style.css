@@ -11,10 +11,11 @@ body {
     position: relative;
 }
 
+/*NAVBAR*/
+
 header {
     background-color: #5D6A8E;
     padding: 20px;
-    text-align: center;
     top: 0;
     position: sticky;
     display: flex;
@@ -29,10 +30,8 @@ header img {
 
 nav ul {
     width: 100%;
-    list-style-type: none;
     padding: 0;
     gap: 20px;
-    justify-content: center;
     display: flex;
     align-items: center;
 }
@@ -64,6 +63,8 @@ p{
     font-size: 25px;
     text-align: center;
 }
+
+/*PRESENTATION*/
 
 #catchPresentation{
     font-style: italic;
@@ -115,6 +116,8 @@ p{
     cursor: pointer;  
 }
 
+/*MECANIQUES*/
+
 #armure{
     display: flex;
     justify-content: space-evenly;
@@ -149,6 +152,8 @@ p{
     padding: 20px;    
 }
 
+/*PERSONNAGES*/
+
 #persos{
     display: flex;
     position: relative;
@@ -164,6 +169,8 @@ p{
     margin: 60px;
 }
 
+/*PAGE DE CONTACT*/
+
 #art img {
     width: 15%;
 }
@@ -178,6 +185,7 @@ p{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .eleve2{
@@ -190,6 +198,7 @@ p{
     padding-right: 30px;
 }
 
+/*BOUTON INSCRIPTION*/
 
 #formulaire form {
     margin-top: 100px;
@@ -229,6 +238,7 @@ p{
     outline: none;
 }
 
+/*FOOTER*/
 
 footer img {
     margin-top: 70px;
