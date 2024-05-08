@@ -138,7 +138,14 @@ p{
     text-align: justify;
 }
 
-#plateau{
+#plateau div{
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    margin: 20px;
+}
+
+#plateau-images{
     display: flex;
     position: relative;
     margin-top: 60px;
@@ -146,9 +153,11 @@ p{
     padding-right: 80px;
 }
 
-#plateau img{
+#plateau-textes{
     width: 100%;
+    display: flex;
     justify-content: space-evenly;
+<<<<<<< Updated upstream
     padding: 20px;    
 }
 
@@ -246,3 +255,55 @@ footer img {
     margin-right: 10px;
     width: 2.5%;
 }
+=======
+
+}
+
+
+
+
+
+/*----------------Images Mécaniques Hover----------------*/
+
+.img-lumiere{
+    width: 100%;
+    padding: 20px;
+    background-image: url('/img/lumiere.jpg');
+    background-size: cover;
+}
+
+
+.img-lumiere:hover{
+    background-image: url('/img/hover.jpg');
+}
+
+
+.img-valve{
+    width: 100%;
+    padding: 20px;
+    background-image: url('/img/valve.jpg');
+    background-size: cover;
+}
+
+
+.img-valve:hover{
+    background-image: url('/img/hover.jpg');
+
+}
+
+
+
+.img-benediction{
+    width: 100%;
+    padding: 20px;
+    background-image: url('/img/benediction.jpg');
+    background-size: cover;
+}
+
+
+.img-benediction:hover{
+    background-image: url('/img/hover.jpg');
+
+}
+/*------------------------------------------------------*/
+>>>>>>> Stashed changes
