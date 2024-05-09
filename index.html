@@ -16,140 +16,153 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <nav id="nav-menu">
-            <ul>
-                <li><a href="#presentation">Présentation</a></li>
-                <li><a href="#mecaniques">Mécaniques</a></li>
-                <img src="img/logo.png" alt="logo">
-                <li><a href="#personnages">Personnages</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <body>
+        <header>
+            <!-- Bouton menu burger-->
+            <button class="menu-bouton" onclick="toggleMenu()">
+                <i class="fa-solid fa-ghost"></i>
+            </button>
 
-    <section id="presentation" class="container">
+            <nav id="nav-menu" onclick="closeMenu()">
+                <ul>
+                    <li><a href="#presentation">Présentation</a></li>
+                    <li><a href="#mecaniques">Mécaniques</a></li>
+                    <img src="img/logo.png" alt="logo">
+                    <li><a href="#personnages">Personnages</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <h1>DEVOTION ET DAMNATION</h1> <!--changement de police ?-->
+        <section id="presentation" class="container">
 
-        <p id="catchPresentation">"Entrez dans le monde fantastique de quatre adolescents maudits..."</p>
+            <h1>DEVOTION ET DAMNATION</h1>
+            
+            <p id="catchPresentation">"Entrez dans le monde fantastique de quatre adolescents maudits..."</p>
 
-        <div class="video">
-            <iframe
-                width="1851"
-                height="779"
-                src="https://www.youtube.com/embed/N025CbAIAt8"
-                title="Wakfu Opening 1 ~ HD"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen>
-            </iframe>
-        </div>
+            <div class="video">
+                <iframe
+                    width="1851"
+                    height="779"
+                    src="https://www.youtube.com/embed/N025CbAIAt8"
+                    title="Wakfu Opening 1 ~ HD"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
 
-        <p id="story">
-            Suite à une petite aventure Urbex, un groupe de 4 jeunes étudiants se retrouvent maudit par le chateau de Fougeret. Chateau ayant vécu la guerre et de nombreux traumatismes. Ils vont devoir s’embarquer dans une aventure particulière afin briser le maléfice qui plane sur eux...
-        </p>
+            <p id="story">
+                Suite à une petite aventure Urbex, un groupe de 4 jeunes étudiants se retrouvent maudit par le chateau de Fougeret. Chateau ayant vécu la guerre et de nombreux traumatismes. Ils vont devoir s’embarquer dans une aventure particulière afin briser le maléfice qui plane sur eux...
+            </p>
+            
 
-        <a href="#plateau" class="button">Mécaniques</a>
-        <a href="#cartes" class="button">Cartes</a>
-        <a href="#personnages" class="button">Personnages</a>
-
-
-    </section>
-
-    <section id="mecaniques" class="container">
-
-        <div id="armure">
-            <img src="img/chevalier.png" alt="ImageArmure">
-            <p>Dans les années 1900, un évènement tragique eu lieu. Un homme d’une quarantaine d’année (?) réalisa de nombreux meurtres dans le chateau.
-
-                Pour punition, il se retrouve enfermé dans une armure du chateau et hante ses couloirs...</p>
-        </div>
-
-        <div id="cartes">
-            <img src="https://i.pinimg.com/564x/1e/e0/6f/1ee06fc304ce9d9dfa1a0f1070765ac3.jpg" alt="ImageCartes">
-            <p>Dans les années 1900, un évènement tragique eu lieu. Un homme d’une quarantaine d’année (?) réalisa de nombreux meurtres dans le chateau.
-
-                Pour punition, il se retrouve enfermé dans une armure du chateau et hante ses couloirs...</p>
+            <a href="#plateau" class="button">Mécaniques</a>
+            <a href="#cartes" class="button">Cartes</a>
+            <a href="#personnages" class="button">Personnages</a>
+            
 
 
-        </div>
+        </section>
 
-        <div id="plateau">
-            <!--Images dans le css pour l'utilisation du hover-->
-            <div id="plateau-images">
-                <div class="img-lumiere"></div>
-                <div class="img-valve"></div>
-                <div class="img-benediction" ></div>
+        <section id="mecaniques" class="container">
 
+            <div id="armure">
+                <img src="img/chevalier.png" alt="ImageArmure">
+                <p>Dans les années 1900, un évènement tragique eu lieu. Un homme d’une quarantaine d’année (?) réalisa de nombreux meurtres dans le chateau.
+                    Pour punition, il se retrouve enfermé dans une armure du chateau et hante ses couloirs...</p>
+            </div>
+
+            <div id="cartes">
+                <img src="https://i.pinimg.com/564x/1e/e0/6f/1ee06fc304ce9d9dfa1a0f1070765ac3.jpg" alt="ImageCartes">
+                
+                <p>Dans les années 1900, un évènement tragique eu lieu. Un homme d’une quarantaine d’année (?) réalisa de nombreux meurtres dans le chateau.
+                    Pour punition, il se retrouve enfermé dans une armure du chateau et hante ses couloirs...</p>
+
+                    <p>Dans les années 1900, un évènement tragique eu lieu. Un homme d’une quarantaine d’année (?) réalisa de nombreux meurtres dans le chateau.
+                        Pour punition, il se retrouve enfermé dans une armure du chateau et hante ses couloirs...</p>
+    
 
 
             </div>
 
-            <div id="plateau-textes">
-                <div>
-                    <p>Fonctionnement de la lumière et du générateur</p>  
+            <div id="plateau">
+                <!--Images dans le css pour l'utilisation du hover-->
+                <div id="plateau-images">
+                    <div class="img-lumiere"></div>
+                    <div class="img-valve"></div>
+                    <div class="img-benediction" ></div>
+
                 </div>
 
-                <div>
-                    <p>Utilisation de la Valve et du levier</p>              
+
+                <div id="plateau-textes">
+                    <div>
+                        <p>Fonctionnement de la lumière et du générateur</p>  
+                    </div>
+
+                    <div>
+                        <p>Utilisation de la Valve et du levier</p>              
+                    </div>
+                    
+                    <div>
+                        <p>Salles de Bénédictions</p>         
+                    </div>
+
+                    
+                    
                 </div>
-                
-                <div>
-                    <p>Salles de Bénédictions</p>         
-                </div>
 
-                
-                
-            </div>
-
-
- 
-         
-         
-        </div>
-
-
-    </section>
-
-    <section id="personnages" class="container">
-        <div id="persos">
-            <div>
-                <img src="img/nick.png" alt="Nick">
-                <p>Nick</p>
-            </div>
-
-          <div>
-            <img src="img/henri.png" alt="Henri">
-            <p>Henri</p>
-          </div>
-
-          <div>
-            <img src="img/cassie.png" alt="Cassie">
-            <p>Cassie</p>
-          </div>
-
-          <div>
-            <img src="img/britanny.png" alt="Britanny"> 
-            <p>Britanny</p>
-          </div>
-        </div>
-        <div id="texte">
-            <p>Le groupe devra travailler ensemble pour sortir vivant du château hanté. Attirer le fantôme, échanger leurs objets et essences et garder un oeil sur leur entourage, il faut faire preuve d’entraide pour survivre.</p>
-        </div>
-    </section>
-
-    <section class="container">
-        <a href="" class="button">Achetez</a>
-    </section>
 
     
-    <footer class="container"> 
-        <img src="img/instagram.png" alt="instagram">
-        <img src="img/pinterest.png" alt="pinterest">
-        <img src="img/twitter.png" alt="twitter">
-    </footer>    
-</body>
+            
+            
+            </div>
+
+
+        </section>
+
+        <section id="personnages" class="container">
+            <div id="persos">
+                <div>
+                    <img src="img/nick.png" alt="Nick">
+                    <p>Nick</p>
+                </div>
+
+            <div>
+                <img src="img/henri.png" alt="Henri">
+                <p>Henri</p>
+            </div>
+
+            <div>
+                <img src="img/cassie.png" alt="Cassie">
+                <p>Cassie</p>
+            </div>
+
+            <div>
+                <img src="img/britanny.png" alt="Britanny"> 
+                <p>Britanny</p>
+            </div>
+            </div>
+            <div id="texte">
+                <p>Le groupe devra travailler ensemble pour sortir vivant du château hanté. Attirer le fantôme, échanger leurs objets et essences et garder un oeil sur leur entourage, il faut faire preuve d’entraide pour survivre.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <a href="" class="button">Achetez</a>
+        </section>
+
+        
+        <footer class="container"> 
+            <img src="img/instagram.png" alt="instagram">
+            <img src="img/pinterest.png" alt="pinterest">
+            <img src="img/twitter.png" alt="twitter">
+        </footer>
+        
+        <!--Javascript-->
+        <script src="js/app.js"></script>
+
+    </body>
 </html>
