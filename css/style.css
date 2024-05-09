@@ -72,7 +72,6 @@ p{
 
 #story{
     text-align: center, justify;
-    font-size: large;
 }
 
 .container{
@@ -121,28 +120,43 @@ p{
 #armure{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 60px;
+    margin-top: 100px;
+    align-items: center;
+}
+
+#armure img{
+    width: 250%;
 }
 
 #armure p{
     text-align: justify;
+    margin-left: 30px;
 }
 
 #cartes{
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-#cartes p{
-    text-align: justify;
+#cartes img{
+    width: 100%;
+}
+
+#cartes p {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 30px;
 }
 
 #plateau div{
     width: 100%;
     height: 400px;
     padding: 20px;
-    margin: 20px;
+    margin: 20px 20px 0 20px;
 }
 
 #plateau-images{
@@ -156,9 +170,7 @@ p{
 #plateau-textes{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-<<<<<<< Updated upstream
-    padding: 20px;    
+    justify-content: space-evenly;  
 }
 
 /*PERSONNAGES*/
@@ -170,11 +182,10 @@ p{
 
 #persos img{
     width: 100%;
-    justify-content: space-evenly;
-    padding: 20px;    
+    justify-content: space-evenly;  
 }
 
-#texte{
+#persos-texte{
     margin: 60px;
 }
 
@@ -182,10 +193,12 @@ p{
 
 #art img {
     width: 15%;
+    border-radius: 50%;
 }
 
 #prog img {
     width: 15%;
+    border-radius: 50%;
 }
 
 .eleve1,
@@ -255,9 +268,7 @@ footer img {
     margin-right: 10px;
     width: 2.5%;
 }
-=======
 
-}
 
 
 
@@ -306,4 +317,3 @@ footer img {
 
 }
 /*------------------------------------------------------*/
->>>>>>> Stashed changes
