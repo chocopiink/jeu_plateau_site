@@ -201,6 +201,32 @@ p{
     margin: 60px;
 }
 
+#fantome{
+    height: 10%;
+    display: flex;
+    justify-content: end;
+    animation: bolb 25s linear infinite;
+}
+
+@keyframes bolb {
+    0%{
+        transform: translate(-100px, 120px) scale(1) rotate(-10deg);
+    }
+    25%{
+        transform: translate(-1000px, -1500px) scale(1) rotate(10deg);
+    }
+    50%{
+        transform: translate(-250px, -3500px) scale(1) rotate(-10deg);
+    }
+    75%{
+        transform: translate(-1500px, -4500px) scale(1) rotate(10deg);
+    }
+    100%{
+        transform: translate(-500px, -6500px) scale(1) rotate(-10deg);
+    }
+}
+
+
 /*PAGE DE CONTACT*/
 
 #presentation p {
