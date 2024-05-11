@@ -78,12 +78,6 @@ p{
     text-align: center, justify;
 }
 
-.container{
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0px 20px;
-    text-align: center;
-}
 .video {
     position: relative;
     width: 100%;
@@ -115,7 +109,7 @@ p{
     border-radius: 5px 5px 5px 5px;
     transition: background-color .3s ease-in-out; 
 }
-.button:hover {
+.button:hover {         /*La couleur + le curseur change quand on passe sur le bouton*/
     background-color: #1D1C2A;
     cursor: pointer;  
 }
@@ -192,7 +186,7 @@ p{
     justify-content: space-evenly;  
 }
 
-#persos img:hover{
+#persos img:hover{      /*L'image s'aggrandit quand on passe sa souris dessus*/
     width: 120%;
 }
 
@@ -204,10 +198,10 @@ p{
     height: 10%;
     display: flex;
     justify-content: end;
-    animation: bolb 25s linear infinite;
+    animation: ghost 25s linear infinite;
 }
 
-@keyframes bolb {
+@keyframes ghost {      /*Animation du fantome*/
     0%{
         transform: translate(-100px, 120px) scale(1) rotate(-10deg);
     }
