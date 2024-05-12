@@ -29,7 +29,7 @@ header img {
 }
 
 .menu-btn{
-    display: none;
+    display: none;  /*Le menu hamburger est présent que sous format mobile*/
 }
 
 nav ul {
@@ -46,6 +46,7 @@ nav ul li a {
     padding: 40;
 }
 
+/*Adaptation basique de texte et image*/
 .container {
     max-width: 1200px;
     margin: 20px auto;
@@ -93,6 +94,7 @@ p{
     height: 100%;
 }  
 
+/*Adapte les 3 boutons de redirection et celui d'achat*/
 .button{
     display: inline-block;
     padding: 20px 30px;
@@ -109,7 +111,7 @@ p{
     border-radius: 5px 5px 5px 5px;
     transition: background-color .3s ease-in-out; 
 }
-.button:hover {         /*La couleur + le curseur change quand on passe sur le bouton*/
+.button:hover {         /*La couleur et le curseur change quand on passe sur le bouton*/
     background-color: #1D1C2A;
     cursor: pointer;  
 }
@@ -125,7 +127,7 @@ p{
 }
 
 #armure img{
-    width: 50%; /*Firefox : 250%*/
+    width: 150%; /*Firefox : 250%*/
 }
 
 #armure p{
@@ -142,7 +144,7 @@ p{
 }
 
 #cartes img{
-    width: 100%;
+    width: 40%;
 }
 
 #cartes p {
@@ -194,6 +196,7 @@ p{
     margin: 60px;
 }
 
+/*Icone pour l'animation*/
 #fantome{
     height: 10%;
     display: flex;
@@ -232,10 +235,18 @@ p{
     border-radius: 50%;
 }
 
+#art p {
+    text-align: left;
+}
+
 #prog img {
     width: 15%;
     border-radius: 50%;
     margin-bottom: 20px;
+}
+
+#prog p {
+    text-align: left;
 }
 
 .eleve1,
@@ -249,6 +260,7 @@ p{
     margin-bottom: 50px;
 }
 
+/*Besoin d'adapter la 3eme image comme sa disposition est différente*/
 .eleve2{
     justify-content: center;
 }
@@ -266,7 +278,7 @@ p{
     justify-content: center;
 }
 
-#formulaire input[type="email"] {
+#formulaire input[type="email"] { 
     width: 300px;
     padding: 10px;
     border: 2px solid #906FC9;
@@ -289,12 +301,12 @@ p{
     transition: background-color .3s ease-in-out; 
 }
 
-#formulaire button:hover {
+#formulaire button:hover {  /*La couleur et le curseur change quand on passe sur le bouton*/
     background-color: #1D1C2A;
     cursor: pointer;  
 }
 
-#formulaire input:focus {
+#formulaire input:focus {   /*Retire la cadre bleu de la zone d'input quand on écrit*/
     outline: none;
 }
 
