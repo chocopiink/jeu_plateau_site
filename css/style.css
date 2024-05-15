@@ -346,26 +346,26 @@ footer img {
 .img-lumiere{
     width: 100%;
     padding: 20px;
-    background-image: url('/img/lumiere.jpg');
+    background-image: url('/img/poelon_allume.PNG');
     background-size: cover;
 }
 
 
 .img-lumiere:hover{
-    background-image: url('/img/hover.jpg');
+    background-image: url('/img/poelon_eteint.PNG');
 }
 
 
 .img-valve{
     width: 100%;
     padding: 20px;
-    background-image: url('/img/valve.jpg');
+    background-image: url('/img/fantome_fache.PNG');
     background-size: cover;
 }
 
 
 .img-valve:hover{
-    background-image: url('/img/hover.jpg');
+    background-image: url('/img/fantome_endormi.PNG');
 
 }
 
@@ -374,13 +374,13 @@ footer img {
 .img-benediction{
     width: 100%;
     padding: 20px;
-    background-image: url('/img/benediction.jpg');
+    background-image: url('/img/trappe_ouverte.PNG');
     background-size: cover;
 }
 
 
 .img-benediction:hover{
-    background-image: url('/img/hover.jpg');
+    background-image: url('/img/trappe_fermee.PNG');
 
 }
 
@@ -491,17 +491,17 @@ footer img {
     }
 
     .img-lumiere-2{
-        background-image: url('/img/hover.jpg');
+        background-image: url('/img/poelon_eteint.PNG');
         background-size: cover;
     }
 
     .img-valve-2{
-        background-image: url('/img/hover.jpg');
+        background-image: url('/img/fantome_endormi.PNG');
         background-size: cover;
     }
 
     .img-benediction-2{
-        background-image: url('/img/hover.jpg');
+        background-image: url('/img/trappe_fermee.PNG');
         background-size: cover;
     }
 
