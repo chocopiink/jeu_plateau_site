@@ -36,19 +36,22 @@
 
         
         <nav id="nav-menu" onclick="closeMenu()">
-            <ul>
+            <ul> <!-- Ancres qui ramènent vers les différentes parties du site -->
                 <li><a href="#presentation">Présentation</a></li>
                 <li><a href="#mecaniques">Mécaniques</a></li>
                 <img src="img/logo.png" alt="logo">
                 <li><a href="#personnages">Personnages</a></li>
-                <li><a href="contact.html">Contact</a></li> <!-- Ramène vers la page de contact -->
+                <li><a href="contact.html">Contact</a></li> 
             </ul>
         </nav>
     </header>
 
+    <div id="cursor"></div>
+
+    <!--Présentation du jeu de plateau-->
     <section id="presentation" class="container">
 
-        <h1>DÉVOTION ET DAMNATION</h1> <!--changement de police ?-->
+        <h1>DÉVOTION ET DAMNATION</h1> <!--Nom-->
 
         <p id="catchPresentation">"Entrez dans le monde fantastique de quatre adolescents maudits..."</p>
 
@@ -60,6 +63,7 @@
             Un groupe d'ados part explorer un vieux chateau abandonné pour leur projet d'école. Mais ils découvrent vite que ce chateau est hanté et qu'ils ont réussi à énerver les fantômes. Les ados sont maintenant maudits et sont incapable de sortir du chateau. Afin de briser cette malédiction ils doivent réunir et purifier des objets enchantés, tout en faisant attention au chevalier fantôme qui garde les pièces du chateau.
         </p>
 
+        <!--Boutons vers les parties de la page Accueil-->
         <a href="#plateau" class="button">Mécaniques</a>
         <a href="#cartes" class="button">Cartes</a>
         <a href="#personnages" class="button">Personnages</a>
@@ -67,6 +71,7 @@
 
     </section>
 
+    <!--Présentation des mécaniques de jeu-->
     <section id="mecaniques" class="container">
 
         <h2>L'armure hantée</h2>
@@ -110,6 +115,7 @@
         <h3>Mécaniques du plateau</h3>
 
         <div id="plateau">
+
             <!--Images dans le css pour l'utilisation du hover-->
             <div id="plateau-images">
                 <div class="img-lumiere"></div>
@@ -117,6 +123,7 @@
                 <div class="img-benediction" ></div>
             </div>
 
+            <!--Pour la version mobile : invisible sur PC-->
             <div id="plateau-images-mobile">
                 <div class="img-lumiere-2"></div>
                 <div class="img-valve-2"></div>
@@ -143,6 +150,7 @@
 
     </section>
 
+    <!--Présentation des personnages-->
     <section id="personnages" class="container">
 
         <h4>Les personnages</h4>
@@ -178,7 +186,7 @@
 
     <!-- Icone d'animation -->
     <section id="fantome">
-        <img src="img/ghost.png" alt="">
+        <img src="img/ghost.png" alt="fantôme">
     </section>
     
     <footer> 

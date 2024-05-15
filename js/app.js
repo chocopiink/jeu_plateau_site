@@ -1,3 +1,4 @@
+/*---Menu Burger---*/
 var menuMobile = document.getElementById("nav-menu");
 
 function toggleMenu() {

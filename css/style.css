@@ -11,6 +11,7 @@ body {
     position: relative;
 }
 
+
 /*NAVBAR*/
 
 header {
@@ -103,21 +104,21 @@ video {
     text-decoration: none;
     font-size: 30px;
     justify-content: space-between;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin : 100px, 50px, 80px;
     border: 2px solid #906FC9;
     border-radius: 5px 5px 5px 5px;
     transition: background-color .3s ease-in-out; 
 }
-.button:hover {         /*La couleur et le curseur change quand on passe sur le bouton*/
+
+/*La couleur et le curseur change quand on passe sur le bouton*/
+.button:hover {         
     background-color: #1D1C2A;
     cursor: pointer;  
 }
 
 /*MECANIQUES*/
 
+/*Armure hantée*/
 #armure{
     display: flex;
     justify-content: space-evenly;
@@ -135,6 +136,7 @@ video {
     margin-left: 30px;
 }
 
+/*Les cartes*/
 #cartes{
     display: flex;
     justify-content: center;
@@ -152,12 +154,12 @@ video {
     margin-left: 30px;
 }
 
+/*Les mécaniques de plateau*/
 #plateau div{
     width: 100%;
     padding: 20px;
     margin: 20px 20px 0px 10px;
 }
-
 
 #plateau-images{
     display: flex;
@@ -167,16 +169,55 @@ video {
     padding-right: 80px;
 }
 
+/*Retire les images en version PC (apparraisent grâce au hover) et s'activent en mobile*/
 #plateau-images-mobile{
     display: none;
 }
-
-
 
 #plateau-textes{
     width: 100%;
     display: flex;
     justify-content: space-evenly;  
+}
+
+/*----------------Images Mécaniques Hover----------------*/
+
+.img-lumiere{
+    width: 100%;
+    padding: 20px;
+    background-image: url('/img/poelon_allume.PNG');
+    background-size: cover;
+}
+
+
+.img-lumiere:hover{
+    background-image: url('/img/poelon_eteint.PNG');
+}
+
+.img-valve{
+    width: 100%;
+    padding: 20px;
+    background-image: url('/img/fantome_fache.PNG');
+    background-size: cover;
+}
+
+
+.img-valve:hover{
+    background-image: url('/img/fantome_endormi.PNG');
+
+}
+
+.img-benediction{
+    width: 100%;
+    padding: 20px;
+    background-image: url('/img/trappe_ouverte.PNG');
+    background-size: cover;
+}
+
+
+.img-benediction:hover{
+    background-image: url('/img/trappe_fermee.PNG');
+
 }
 
 /*PERSONNAGES*/
@@ -208,7 +249,8 @@ video {
     animation: ghost 25s linear infinite;
 }
 
-@keyframes ghost {      /*Animation du fantome*/
+/*Animation du fantome*/
+@keyframes ghost {      
     0%{
         transform: translate(-100px, 120px) scale(1) rotate(-10deg);
     }
@@ -226,14 +268,13 @@ video {
     }
 }
 
-
 /*PAGE DE CONTACT*/
-
 #presentation p {
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
+/*Section Art*/
 #art{
     margin-bottom: 100px;
 }
@@ -247,6 +288,7 @@ video {
     text-align: left;
 }
 
+/*Section Prog*/
 #prog{
     margin-bottom: 100px;
 }
@@ -261,6 +303,7 @@ video {
     text-align: left;
 }
 
+/*Modifications des images des deux sections Art et Prog*/
 .eleve1,
 .eleve2,
 .eleve3 {
@@ -272,7 +315,7 @@ video {
     margin-bottom: 50px;
 }
 
-/*Besoin d'adapter la 3eme image comme sa disposition est différente*/
+/*Besoin d'adapter la 3eme image (section Art) comme sa disposition est différente*/
 .eleve2{
     justify-content: center;
 }
@@ -281,9 +324,7 @@ video {
     margin-left: 30px;
 }
 
-
 /*BOUTON INSCRIPTION*/
-
 #formulaire form {
     margin-top: 50px;
     display: flex;
@@ -318,12 +359,11 @@ video {
     cursor: pointer;  
 }
 
-#formulaire input:focus {   /*Retire la cadre bleu de la zone d'input quand on écrit*/
+#formulaire input:focus {   /*Retire le cadre bleu de la zone d'input quand on écrit*/
     outline: none;
 }
 
 /*FOOTER*/
-
 footer {
     background-color: #5D6A8E;
     margin-top: 100px;
@@ -335,55 +375,7 @@ footer img {
     margin: 7px 10px 7px 10px;
 }
 
-
-
-
-
-
-/*----------------Images Mécaniques Hover----------------*/
-
-.img-lumiere{
-    width: 100%;
-    padding: 20px;
-    background-image: url('/img/poelon_allume.PNG');
-    background-size: cover;
-}
-
-
-.img-lumiere:hover{
-    background-image: url('/img/poelon_eteint.PNG');
-}
-
-
-.img-valve{
-    width: 100%;
-    padding: 20px;
-    background-image: url('/img/fantome_fache.PNG');
-    background-size: cover;
-}
-
-
-.img-valve:hover{
-    background-image: url('/img/fantome_endormi.PNG');
-
-}
-
-
-
-.img-benediction{
-    width: 100%;
-    padding: 20px;
-    background-image: url('/img/trappe_ouverte.PNG');
-    background-size: cover;
-}
-
-
-.img-benediction:hover{
-    background-image: url('/img/trappe_fermee.PNG');
-
-}
-
-/* Adaptation Mobile */
+/*------Adaptation Mobile------*/
 
 @media screen and (max-width: 768px){
     header{
@@ -393,6 +385,7 @@ footer img {
       }
       
 
+    /*---Navbar---*/
     .menu-btn{
         display: block;
         background: transparent;
@@ -489,6 +482,7 @@ footer img {
         padding-right: 80px;
     }
 
+    /*---Images qui apparaissent en hover sur PC---*/
     .img-lumiere-2{
         background-image: url('/img/poelon_eteint.PNG');
         background-size: cover;
