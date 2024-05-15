@@ -127,7 +127,7 @@ p{
 }
 
 #armure img{
-    width: 450px; /*Firefox : 150%, Opera et Chrome : 450px*/
+    width: 450px; /*Firefox : 150%*/ /*Opera : 450px*/
 }
 
 #armure p{
@@ -139,13 +139,13 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
 }
 
 #cartes img{
-    width: 70%;
-    margin: 10px;
+    width: 250px;  /*Firefox : 50%*/ /*Opera : 250px*/
+    margin: 50px;  
 }
 
 #cartes p {
@@ -155,17 +155,24 @@ p{
 #plateau div{
     width: 100%;
     padding: 20px;
-    margin: 20px 20px 0 20px;
+    margin: 20px 20px 0px 10px;
 }
+
 
 #plateau-images{
     display: flex;
     position: relative;
     height: 450px;
     margin-top: 60px;
-    padding-left: 80px;
+
     padding-right: 80px;
 }
+
+#plateau-images-mobile{
+    display: none;
+}
+
+
 
 #plateau-textes{
     width: 100%;
@@ -228,6 +235,10 @@ p{
     margin-bottom: 50px;
 }
 
+#art{
+    margin-bottom: 100px;
+}
+
 #art img {
     width: 15%;
     border-radius: 50%;
@@ -235,6 +246,10 @@ p{
 
 #art p {
     text-align: left;
+}
+
+#prog{
+    margin-bottom: 100px;
 }
 
 #prog img {
@@ -443,8 +458,16 @@ footer img {
         width: 40vw;
     }
 
+    #cartes{
+        margin-left: 7vw;
+    }
+
     #cartes img{
-        width: 40vw;
+        width: 20vw;
+    }
+
+    #cartes p{
+        font-size: 1.2em;
     }
 
     /*transition cartes plateau*/
@@ -456,6 +479,30 @@ footer img {
 
     #plateau p{
         font-size: 1.2em;
+    }
+
+    #plateau-images-mobile{
+        display: flex;
+        position: relative;
+        height: 450px;
+        margin-top: 60px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .img-lumiere-2{
+        background-image: url('/img/hover.jpg');
+        background-size: cover;
+    }
+
+    .img-valve-2{
+        background-image: url('/img/hover.jpg');
+        background-size: cover;
+    }
+
+    .img-benediction-2{
+        background-image: url('/img/hover.jpg');
+        background-size: cover;
     }
 
     /*---Page Contact---*/
